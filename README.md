@@ -5,7 +5,7 @@ FIZ5122		Yüksek Enerji Fiziğinde Bilgisayar Uygulamaları
 
 FIZ5122	  Computational in High Energy Physics	          3 credit	7.5 AKTS		
 
-Schedula
+-------- Schedule --------
 
 Introduction
 
