@@ -9,14 +9,14 @@ Schedula
 
 Introduction
 
-Linux
+   * Linux
 
-C++
+   * C++
 
-Root - An Object Ortiented Data Analysis Framework
+   * Root - An Object Ortiented Data Analysis Framework
 
-Project
+   *  Project
 
-Pythia (Opt)
+  *  Pythia (Opt)
 
-Geant4 (Opt)
+  * Geant4 (Opt)
