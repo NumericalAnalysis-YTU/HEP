@@ -1,0 +1,123 @@
+Exercises
+
+What is a stream?
+Why is cout called a stream?
+What is a manipulator?
+What does the ios::ate argument do?
+What does the method eof() do?
+* Modify program below such that it also outputs the minimum and maximium values of the temperatures recorded in the file kelvin.tmp.
+// Reading data from a file with a check for is_open()
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main ()
+{
+  string filename = "kelvin.tmp";
+  ifstream kelvin(filename.c_str());
+  double k;
+
+  if (kelvin.is_open())
+  {
+      double s;
+      int i;
+
+      cout << "Reading data from file: " << filename << endl;
+      for(s = 0.0, i=0; i<100; i++, s += k )
+         kelvin >> k;
+      kelvin.close();
+
+      double mean = s/100.0;
+
+      cout << "mean of the data = " << mean << endl;
+  }
+  else
+    cout << "Unable to open file " << filename;
+
+  return 0;
+}
+* Write a program that outputs to a file called numbers.dat the integer numbers 1 to 100 and their square-roots. The output should be formatted as illustrated below.
+1234567890
+  1  1.000
+  2  1.414
+  3  1.732
+  .      .
+  .      .
+  .      .
+100 10.000
+
+The file gravity.dat contains the following measured values for the acceleration due to gravity. Write a program to input the data into an array and output the mean value to the screen.
+9.81
+9.79
+9.83
+9.79
+9.90
+9.82
+9.84
+9.78
+9.85
+
+The file student.dat contains the names and corresponding exam scores of 20 students in a class (the data is given below). Write a program which reads the data from the file and calculates and outputs a) the mean score of the class excluding zeros and b) the name and score of the students getting the maximum and minimum score.
+UGUR      67
+KADIR     72
+SEMIH	  00
+GOZDE     73
+FIRAT     30
+EDA       51
+FULYA     41
+GULISTAN  67
+EMRE      30
+AHMET     76
+ISMAIL    67
+MELIKE    71
+TANER     59
+SEHER     79
+ALI       90
+EMIN	  88
+HAVVA     76
+FERDA     00
+MUKRIME   54
+TUGBA	  61
+
+
+What is the output of the following program?
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+  int i = 1;
+  while(i<=10)
+    cout << setw(4) << i++ << fixed
+         << setw(6) << setprecision(2) << log(i)
+         << setw(6) << setprecision(2) << log10(i) << endl;
+  return 0;
+}
+
+
+What is the output of the following program?
+// Program to show that the maximum power delivered to the 
+// load resistance R occurs when the load resistance
+// matches the internal resistance r (namely R = r)
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+  double R=0.0, r = 1.0e+3, Rmax = 5.0e+3;
+
+  cout << scientific << setprecision(1);
+
+  do{
+    double power = 100.0* R/(R+r)/(R+r);
+    cout << setw(9) << r << setw(9) << R
+         << setw(9) << power << endl;
+    R += 500;
+
+  }while(R <= Rmax);
+
+  return 0;
+}
