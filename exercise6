@@ -1,0 +1,38 @@
+Exercises
+
+* What is the difference between arguments passed by value and by reference?
+* What is recursion?
+* What is function overloading and polymorphism?
+* What is the difference between a macro function and an ordinary function?
+
+* Write a recursive function called unsigned fib(unsigned n) that returns the n'th element of the Fibonacci series: 
+1, 1, 2, 3, 5, 8, 13, 21, 34, ...
+Each number, after the second, is the sum of the two numbers before it.
+
+* Write a program that inputs an integer number n and an integer power p and outputs n p. The calculation should be done using a recursive function named int power(n, p).
+
+* What do you expect to be the output of the following program? Compile and run the program, is the output what you expected? If not, explain why.
+#include <iostream>
+
+int foo (int =1);
+double foo (double);
+
+int main(void)
+{
+  for(int i=0; i<20; i+=3){
+    int x = foo();
+    int y = foo(i-x);
+    double z = foo(1.0*i);
+    std::cout << x << '\t' << y << '\t' << z << std::endl;
+  }
+  return 0;
+}
+
+int foo (int a){
+  if (a > 1) return (a * foo (a-1));
+  else return 1;
+}
+double foo (double a){
+  if (a > 1.0) return (a * foo (a-1.0));
+  else return 1.0;
+}
