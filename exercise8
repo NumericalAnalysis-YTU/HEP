@@ -1,0 +1,10 @@
+Exercises
+
+* Write a program that includes a vector with the following elements; A={3,5,-2,4,7}, then add two more elements with values 10 and 12 to the end of the vector.
+A vector is given as follows: B={3,-5,-2,4,-7,9,22,-8}. Write a program to remove the negative elements from the vector.
+
+* Write a program that reads the elements of a vector of initial size n. Then insert the mean of the elements to the end of the vector.
+
+* Write a program that creates a vector containing all prime numbers between 1 and 500.
+See http://en.wikipedia.org/wiki/Prime_number
+and http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
