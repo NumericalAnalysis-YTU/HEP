@@ -1,0 +1,67 @@
+Exercises
+
+* What is an array?
+* How can you get the size of an array at run time?
+* What are the first and last elements in Izmir[35]?
+* How do you declare a multidimensional array?
+* How many elements are in the array myMatrix[10][5][20]?
+
+* What is the output of the following program?
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+  enum {SUN, MON, TUE, WED, THU, FRI, SAT};
+  float highTemp[SAT+1] = {24.0, 27.1, 22.0, 25.6, 26.2, 23.3, 26.2};
+
+  for(int i = SUN; i<=SAT; ++i)
+    cout << 1.5*sqrt(highTemp[i]) << endl;
+  return 0;
+}
+
+* Write a program to perform the following tasks:
+Declare an integer array x of size n = 100.
+Input number of data m < n required.
+Input the data (i.e. read the first m elements of x)
+Output the sum of even and odd elements separately.
+
+* Write a C++ function (together with a main program) named double norm(double a[], int n) that returns the norm (magnitude) of the vector A = (a1, a2, ... ,an). The norm is defined as .
+* Write a function (together with a main program) named double maxVal(double a[], int n)  that returns the maximum value of the array a of size n.
+* Write a function (together with a main program) named int maxPos(double a[], int n) that returns the position of element of maximum value of the array a of size n.
+
+* Modify Program below such that it also outputs the angle in degrees between two vectors by means of a function called dotProd().
+// Calculating dot product of two vectors
+#include <iostream>
+using namespace std;
+
+// Returns dot (scalar) product of two vectors of size n
+double dotProd(double a[], double b[], int n = 1)
+{
+  double dp = 0.0;
+  for(int k=0; k<n; ++k)
+    dp += a[k]*b[k];
+  return dp;
+}
+
+int main ()
+{
+  const int size = 3;
+  double v1[size], v2[size];
+
+  cout << "Enter the components of\n";
+  cout << "the first  vector: ";
+  for(int j=0; j<size; j++) cin >> v1[j];
+  cout << "the second vector: ";
+  for(int j=0; j<size; j++) cin >> v2[j];
+
+  double dot = dotProd(v1, v2, size);
+
+  cout << "dot product of the vectors: "
+       << dot << endl;
+
+  return 0;
+}
+
+Write a void function named void crossProd(double a[], double b[], double c[]) which assigns the result of cross product of the vector A and B to vector C (C = A x B). Here, vector sizes must be 3 for these three vectors.
