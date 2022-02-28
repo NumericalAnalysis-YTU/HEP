@@ -1,0 +1,22 @@
+Exercises
+
+* How many data types are in C++?
+
+* What is the difference between short int and int?
+
+* What is an identifier?
+
+* What is the difference between an integer variable and a floating-point variable?
+
+* What are the advantages of using a symbolic constant rather than a literal constant?
+
+* What are the values of s and p after the compound assignment in the following code?
+int k = 2, s = 3, p = 4;
+s += k++;
+p *= ++k;
+
+* Given the following enum, what is the value of TE?
+enum { EP = 1, FE, IE = 4, EE, ME, TE, CE = 9 };
+
+* Which of the following variable names are invalid?
+Age   !ex   R79J   3Vec   totalIncome   __Invalid   �z�mSay�s�
