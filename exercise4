@@ -1,0 +1,85 @@
+Exercises
+
+* How do you choose between while and do ... while?
+* How do you choose between while and for?
+* Is it better to use while (1) or for (;;)?
+* How do I initialize more than one variable in a for loop?
+* What happens if you create a loop that never ends?
+
+* What is the output of the following program?
+  #include <iostream>
+  #include <cmath>
+  int main() {
+    double x=0.;
+    for (int i=1, j=1; i<=10000000; ++i, j=-j) x += j/(2.0*i-1);
+    std::cout << M_PI/(4*x) << std::endl;
+  }
+
+* What is the output of the following program?
+  #include <iostream>
+  int main() {
+    int n=1;
+    while (true) {
+      for(int m=1; m<n; m++)
+        std::cout << m*n << ' ';
+      std::cout << std::endl;
+      if (n++>4) break;
+    }
+  }
+
+* Rewrite the following for loop using while loop.
+for (int x = 0; x < 10; x += 2) cout << '*';
+
+* What is the value of x when the for loop completes? 
+for (int x = 0; x < 100; x++)
+
+* What is the value of x when the do ... while loop completes? 
+int x = 10, k;
+do{
+  k = ++x;
+  x -= 2;
+}while(k>0);
+
+* What is the value of t when the for loops complete? 
+t = 0;
+for (a=1; a<=5; a+=1)
+    for (b=1; b<=a; b+=2)
+        t += a + b;
+
+* Write a nested for loop that outputs the following 4-by-10 pattern of 0s:
+0000000000
+0000000000
+0000000000
+0000000000
+
+* Write a program that inputs a positive integer number n and outputs the odd numbers between 1 and n.
+For example, for n = 12, program should output:
+1 3 5 7 9 11
+After each bounce of a ball the height of the ball is half that of its previous height.
+
+* Write a program to evaluate the height of the ball after 10 bounces, if the initial height is 4 m.
+
+* Write a program that evaluates first 30 terms the following series:
+1 + 1/2 + 1/4 + 1/8 + 1/16 + 1/32 + ...
+
+* What is the result after one million terms?
+
+* Write a program to evaluate the first 20 terms of the following infinite series:
+5/6 + 13/36 + 35/216 + 97/1296 + ... 
+This is a convergent series. Find the convergent value of the series analytically and compare your computer result with this value.
+
+* Write a program that reads a positive integer, k, and outputs its proper divisors.
+For example, for k = 28, the proper divisors are 1 2 4 7 14 28
+A perfect number, p, is a positive integer number whose sum of divisors excluding p itself equal to p.
+For example, p = 6 is a perfect number since 6 = 1 + 2 + 3.
+
+* Write a program to list and count all perfect numbers less than 10,000.
+
+* Write a program that reads a positive integer number m and then prints the english name of each digit of that number in a single line.
+For example, for m = 147, program should output:
+one four seven
+A positive integer n > 1 is called a prime number if it has only two positive divisors (1 and n). The first few primes are:
+2, 3, 5, 7, 11, 13, 17, 19, 23, 29, ...
+
+* Write a program to list and count all prime numbers less than 10,000.
+Hint: you can use the algorithm defined here: Sieve of Eratosthenes.
