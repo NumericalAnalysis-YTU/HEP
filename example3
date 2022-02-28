@@ -1,0 +1,54 @@
+Exercises
+
+* What is the difference between x = 3 and x == 3?
+* Are negative numbers true or false?
+* What does the "conditional expression operator" do?
+* What does if(x) and if(!x) mean?
+
+* Rewrite the following line by using the if ... else statement.
+y = (x > 2 && x<=9) ? x*x:1.0/x;
+
+* What is wrong with the following code?
+if( x > y > z ) cout << x*y*z << endl;
+
+* What is the output of the following program?
+#include <iostream>
+int main(){
+  int z, x = 11, y = 221;
+
+  if(y) z = y < x ? x/y : y/x;
+  else  z = 0.0;
+
+  std::cout << "z = " << z << std::endl;
+
+  return 0;
+}
+
+* What is the output of the following program?
+#include <iostream>
+int main(){
+  int a = 1, b = 1, c;
+
+  if (c = (a-b)) std::cout << "The value of c is: " << c;
+  else           std::cout << "The value of c is: " << c;
+
+  return 0;
+}
+
+* What is the output of the following program?
+#include <iostream>
+int main(){
+  int a = 5, b = 7, c;
+
+  if ( (c = a + b) != 35 )
+    std::cout << "The value of c is: " << c;
+  else
+    std::cout << "The value of c is: " << c;
+
+  return 0;
+}
+
+* Write a program to input an integer number and output whether it is even or not.
+* Write a program that reads a year from the keyboard and outputs whether it is leap year or not.
+* Write a program that reads a grade A, B, C, D, or F and then prints "excellent", "good", "fair", "poor", or "failure". Use else if.
+* Write a program for the previous exercise using switch statement.
