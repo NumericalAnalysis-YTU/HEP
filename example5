@@ -1,0 +1,74 @@
+Exercises
+
+* What are the differences between the function prototype and the function definition?
+* If a function doesn't return a value, how do you declare the function?
+* If you don't declare a return value, what type of return value is assumed?
+
+* What is wrong with the function in the following code?
+#include <iostream>
+using namespace std;
+
+void myFunc(unsigned short int x);
+
+int main(void)
+{
+  unsigned short int a = 10, b;
+
+  y = myFunc(int);
+  cout << "a: " << x << " b: " << b << endl;
+
+  return 0;
+}
+
+void myFunc(unsigned short int x){
+  return (4*x);
+}
+
+* What is the output of the following program?
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int fun(int a) {
+  int p = int(sqrt(a));
+  int q = (a+10)%p;
+  return (a + p + q);
+}
+
+int main()
+{
+
+  for(int i = 1; i <= 9; ++i) {
+     int j = fun(i);
+     cout << i << '\t' << j << endl;
+  }
+
+  return 0;
+}
+
+* Write a function named double perimeter(double r) which returns the circumference of a circle of radius r.
+* Write a function that takes two integer arguments and returns the result of dividing the first by the second. The program should not attempt the division if the second number is zero, in this case it should return -1.
+
+* Write a function named bool isEven(int x) that returns true if x is an even number or false otherwise. 
+Hint: Use modulo operator (%). For example y = 1 for the operation y = x % 2 if x is an odd number.
+
+* Write a boolean type function called bool isPrime(unsigned n) that returns true if n is a prime number or returns false otherwise.
+Hint: you can use the algorithm defined at: Sieve of Eratosthenes.
+In mathematics the Stirling's approximation (or Stirling's formula) is an approximation for large factorials. The formula is written as: 
+
+* Write a function named sfact(n) to calculate n! according to Stirling approximation. Note that return value of the function must be float or double since the formula generates real values.
+
+* Write a main program that uses the functions fact(n) (defined in section 5.7) and sfact(n) (defined in the previous exercise), to compare the factorial of n = 0, 1, 2, ..., 10 by outputting the values of these functions. The output of the program should look something like this:
+ n       fact(n)   sfact(n)
+===      =======   ========
+  0      1         0
+  1      1         0.922137
+  2      2         1.919
+  3      6         5.83621
+  4      24        23.5062
+  5      120       118.019
+  6      720       710.078
+  7      5040      4980.4
+  8      40320     39902.4
+  9      362880    359537
+ 10      3628800   3598700
