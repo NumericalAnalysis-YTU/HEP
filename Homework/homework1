@@ -1,3 +1,14 @@
+
+Prepare your own working environment! 
+
+At least you should be able to compile a program and run it. 
+
+Try out the tricks given in the previous slides; perform the speed test as in the previous slide. What will happen if you add the debug option (-G) to your compiler? 
+
+It could be also interesting to check the size of the output executable ﬁles with different compiling options. 
+ 
+If you did not write any C/C++ code for a while, please refresh your memory before next week!
+
 *  Write a program with output: "Hello MSc students"
 
 * Write a program named triangle.cpp to input the base b and height h of a right-angle triangle, and output its area.
