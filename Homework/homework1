@@ -15,5 +15,6 @@ If you did not write any C/C++ code for a while, please refresh your memory befo
 
 * Write a program named circle.cpp to input the radius r of a circle and output the circumference of the circle.
 
-* Write a program to input kinetic energy K in MeV of a free  electron (with mass me = 0.511 MeV/c) and outputs the momentum in MeV/c and de Broglie wavelength in
-nanometers of the electron. Use relativistic kinematics.
+* Write a program to input kinetic energy K in MeV of a free  electron (with mass me = 0.511 MeV/c) and 
+outputs the momentum in MeV/c and de Broglie wavelength in nanometers of the electron. Use relativistic
+kinematics.
