@@ -30,6 +30,8 @@ Lecture 7 - Numerical Analysis - Random Numbers
 Lecture 8 - Exam Week
 
 Lecture 9 -  Root - An Object Ortiented Data Analysis Framework. -  TGraph and TH1F
+
+      URL ::: https://root.cern/get_started/courses/
            
       URL ::: https://root.cern.ch/root/html534/guides/users-guide/ROOTUsersGuideA4.pdf
 
