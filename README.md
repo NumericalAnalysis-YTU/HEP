@@ -13,7 +13,9 @@ Lecture 2 - Linux
 
 Lecture 3 - C++ Basics and Examples
    
-       URL for ompiling c++ codes: A free, portable, fast and simple C/C++ IDE for windows :::  https://sourceforge.net/projects/dev-cpp/files/
+       URL for ompiling c++ codes: A free, portable, fast and simple C/C++ IDE for windows
+       
+       :::  https://sourceforge.net/projects/dev-cpp/files/
 
 Lecture 4 - C++ Selection & Loops
 
@@ -25,9 +27,11 @@ Lecture 7 - Numerical Analysis - Random Numbers
 
 Lecture 8 - Exam Week
 
-Lecture 9 -  Root - An Object Ortiented Data Analysis Framework
-           TGraph and TH1F
-      URL : https://root.cern.ch/root/html534/guides/users-guide/ROOTUsersGuideA4.pdf
+Lecture 9 -  Root - An Object Ortiented Data Analysis Framework. -  TGraph and TH1F
+           
+      URL ::: https://root.cern.ch/root/html534/guides/users-guide/ROOTUsersGuideA4.pdf
+
+      What is ROOT? Why do we use it? URL::: https://www.nevis.columbia.edu/~seligman/root-class/ClassOverview2017.pdf
 
 Lecture 10 - ROOT: Fitting
 
@@ -42,4 +46,4 @@ Lecture 14 -  Project
 
   *  Pythia (Opt)
 
-  * Geant4 (Opt)
+  *  Geant4 (Opt)
