@@ -7,7 +7,9 @@ FIZ5122	  Computational Methods in High Energy Physics	          3 credit	7.5 AK
 
 -------- Schedule --------
 
-Lecture 1 - Introduction/Handshaking : Link for Presentation : https://avesis.yildiz.edu.tr/murato/documents
+Lecture 1 - Introduction/Handshaking : 
+
+   Link for Presentation : https://avesis.yildiz.edu.tr/murato/documents
 
 Lecture 2 - Linux
 
